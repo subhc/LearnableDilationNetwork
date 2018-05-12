@@ -35,7 +35,7 @@ layer {
     mean_value: 122.675
   }
   image_data_param {
-    root_folder: "path_to_cityscapes"
+    root_folder: "data"
     source: "lst.txt"
     batch_size: 10
     shuffle: true
@@ -49,7 +49,7 @@ layer {
   top: "zero_input"
   top: "zero_temp"
   image_data_param {
-    root_folder: "path_to_zero_images"
+    root_folder: "zero"
     source: "./zero_lst.txt"
     label_type: PIXEL
     batch_size: 10
